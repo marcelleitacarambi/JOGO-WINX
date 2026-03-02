@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Escolha sua Jogadora</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    .instrucao {
+      margin-top: 30px;
+      font-size: 1em;
+      background-color: rgba(0,0,0,0.5);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    .card.selecionado {
+      border: 3px solid #ff3399;
+      box-shadow: 0 0 15px #ff3399;
+    }
+
+    .card.desativado {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="tela-personagens">
+  <div class="personagem-container">
+    <p id="instrucao" class="instrucao">JOGADOR 1, ESCOLHA SUA JOGADORA</p>
+    <div class="personagens">
+      <div class="card" data-nome="Flora" onclick="escolherPersonagem('Flora', this)">
+        <img src="personagens/flora.png" alt="Flora">
+        <p>FLORA</p>
+      </div>
+      <div class="card" data-nome="Bloom" onclick="escolherPersonagem('Bloom', this)">
+        <img src="personagens/bloom.png" alt="Bloom">
+        <p>BLOOM</p>
+      </div>
+      <div class="card" data-nome="Musa" onclick="escolherPersonagem('Musa', this)">
+        <img src="personagens/musa.png" alt="Musa">
+        <p>MUSA</p>
+      </div>
+      <div class="card" data-nome="Stella" onclick="escolherPersonagem('Stella', this)">
+        <img src="personagens/stella.png" alt="Stella">
+        <p>STELLA</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

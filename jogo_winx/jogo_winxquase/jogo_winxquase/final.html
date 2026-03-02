@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase Concluída!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Garante que a imagem de fundo cubra tudo sem barra de rolagem */
+
+            /* --- ESTILOS DA IMAGEM DE FUNDO --- */
+            background-image: url('cenario/final.jpg'); /* <--- SUBSTITUA PELO CAMINHO/NOME DA SUA IMAGEM */
+            background-size: cover; /* Faz a imagem cobrir toda a área, cortando se necessário */
+            background-position: center center; /* Centraliza a imagem */
+            background-repeat: no-repeat; /* Evita repetição da imagem */
+            /* ---------------------------------- */
+
+            flex-direction: column;
+            font-family: 'Arial', sans-serif;
+            color: #fff; /* Cor do texto para contraste com a imagem (ajuste se necessário) */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para o texto para melhorar a legibilidade */
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            /* Pode ajustar a cor se a imagem de fundo dificultar a leitura */
+            color: #fff; /* Exemplo: branco puro */
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            max-width: 80%; /* Limita a largura do parágrafo */
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            background-color: #007bff; /* Azul vibrante, pode ajustar a cor do botão */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+   
+
+    <button onclick="window.location.href='index.html'">Jogar Novamente</button>
+</body>
+</html>

@@ -1,0 +1,70 @@
+body.fase2 {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  overflow: hidden;
+  background-color: #222;
+}
+
+.cenario-fase2 {
+  position: relative;
+  width: 1500px;
+  height: 100vh;
+  background: url('cenario/fase2.png') repeat-x center center;
+  background-size: cover;
+  transition: transform 0.1s linear;
+}
+
+#personagem {
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+  width: 149px;   /* largura real do sprite */
+  height: 202px;  /* altura real do sprite */
+  /* ALTERADO: Adicionado configurações para sprite sheet */
+  background-repeat: no-repeat;
+  background-position: 0px 0px; /* Posição inicial do sprite */
+  /* NOVO: Definir background-size explicitamente para o sprite sheet */
+  background-size: 447px 202px; /* 149px * 3 frames = 447px de largura total */
+  transition: transform 0.1s;
+}
+
+.plataforma {
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  background-color: #777;
+  border-radius: 10px;
+}
+
+.inimigo {
+  position: absolute;
+  bottom: 50px;
+  width: 460px;
+  height: 60px;
+  background: url('cenario/monstro.png') no-repeat center center;
+  background-size: cover;
+}
+
+
+.portal {
+  position: absolute;
+  bottom: 50px;
+  width: 80px;
+  height: 100px;
+  background: url('cenario/portal.png') no-repeat center center;
+  background-size: contain;
+}
+
+.hud {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+#vida .coracao {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+

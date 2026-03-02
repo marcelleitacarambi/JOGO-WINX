@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Garante que a imagem de fundo cubra tudo sem barra de rolagem */
+
+            /* --- ESTILOS DA IMAGEM DE FUNDO --- */
+            background-image: url('cenario/gameover.jpg'); /* <--- SUBSTITUA PELO CAMINHO/NOME DA SUA IMAGEM */
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            /* ---------------------------------- */
+
+            flex-direction: column;
+            font-family: 'Arial', sans-serif;
+            color: #fff; /* Cor do texto para contraste (ajuste se necessário) */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para o texto para melhorar a legibilidade */
+        }
+
+        h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            animation: blink 1s infinite; /* Efeito de piscar, se desejar */
+            /* Pode ajustar a cor se a imagem de fundo dificultar a leitura */
+            color: #fff; /* Exemplo: branco puro ou vermelho para Game Over */
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; } /* Mais suave que 0 */
+            100% { opacity: 1; }
+        }
+
+        p {
+            font-size: 1.8em;
+            margin-bottom: 40px;
+            max-width: 80%;
+        }
+
+        button {
+            padding: 18px 35px;
+            font-size: 1.3em;
+            cursor: pointer;
+            background-color: #dc3545; /* Vermelho escuro para Game Over, pode ajustar a cor do botão */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #c82333;
+            transform: translateY(-3px);
+        }
+
+        button:active {
+            transform: translateY(0);
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    
+    <button onclick="window.location.href='index.html'">Jogar Novamente</button>
+</body>
+</html>

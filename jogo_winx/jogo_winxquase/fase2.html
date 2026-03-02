@@ -1,0 +1,39 @@
+<!-- fase2.html - Versão FINAL corrigida -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Fase 2</title>
+  <link rel="stylesheet" href="fase2.css">
+  <script src="fase2.js" defer></script>
+</head>
+<body class="fase2">
+  <div class="hud">
+    <div id="vida">
+      <img src="cenario/coracao.png" class="coracao">
+      <img src="cenario/coracao.png" class="coracao">
+      <img src="cenario/coracao.png" class="coracao">
+    </div>
+  </div>
+  
+  <div id="cenario2" class="cenario-fase2">
+    
+    <!-- Personagem -->
+    <div id="personagem"></div>
+
+    <!-- Plataformas -->
+    <div class="plataforma" data-direcao="1" style="left: 600px; bottom: 150px;"></div>
+    <div class="plataforma" data-direcao="-1" style="left: 1200px; bottom: 200px;"></div>
+
+    <!-- Inimigos -->
+    <div class="inimigo" data-direcao="1" style="left: 300px; bottom: 50px;"></div>
+    <div class="inimigo" data-direcao="-1" style="left: 900px; bottom: 50px;"></div>
+
+    <!-- Buracos -->
+    <div class="buraco" style="left: 1000px;"></div>
+
+    <!-- Portal Final -->
+    <div class="portal" style="left: 1800px;"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* ----------- GERAL ----------- */
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  overflow: hidden;
+}
+
+body.fase-jogo {
+  overflow: hidden;
+}
+
+/* ----------- FASE 1 ----------- */
+.fase-jogo {
+  background-color: #87CEEB;
+}
+
+/* 🔧 FUNDO com menos zoom e fase mais comprida */
+.cenario.fase1 {
+  position: relative;
+  width: 6000px; /* fase mais longa */
+  height: 100vh;
+  background: url('cenario/fase1.png') repeat-x center center;
+  background-size: 1500px auto; /* menos zoom horizontal e proporcional */
+}
+
+/* Jogadoras */
+/* Jogadoras com Animação de Sprite */
+#personagem1, #personagem2 {
+  position: absolute;
+  bottom: 50px;
+
+  /* --- CORREÇÃO DE TAMANHO --- */
+  /* Coloque os valores REAIS que você mediu aqui */
+  width: 150px;  /* <-- LARGURA REAL DO FRAME */
+  height: 202px; /* <-- ALTURA REAL DO FRAME */
+
+  background-image: url('personagens/flora_sprite.png');
+  background-repeat: no-repeat;
+}
+
+#personagem1 {
+  transition: height 0.1s ease;
+}
+
+/* Chão */
+.chao {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #654321; /* só pra teste */
+  z-index: 1;
+}
+
+
+/* Obstáculos */
+.obstaculo-barril {
+  position: absolute;
+  bottom: 30px;
+  width: 120px;
+  height: 120px;
+  background: url('cenario/barril.png') no-repeat center center;
+  background-size: contain;
+}
+
+.obstaculo-arbusto {
+  position: absolute;
+  bottom: 30px;
+  width: 100px;
+  height: 70px;
+  background: url('cenario/arbusto.png') no-repeat center center;
+  background-size: contain;
+}
+
+/* Item de vida */
+.item {
+  position: absolute;
+  bottom: 120px;
+  width: 60px;
+  height: 60px;
+  background: url('cenario/coracao.png') no-repeat center center;
+  background-size: contain;
+}
+
+/* Portal no fim da fase */
+.portal {
+  position: absolute;
+  bottom: 50px;
+  left: 5800px; /* quase no fim da fase (fase tem 6000px) */
+  width: 80px;
+  height: 100px;
+  background: url('cenario/portal.png') no-repeat center center;
+  background-size: contain;
+}

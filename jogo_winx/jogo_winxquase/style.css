@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  text-align: center;
+}
+
+/* ------------------- TELA INICIAL ------------------- */
+.tela-inicial {
+  background: url('cenario/inicio.png') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.menu button {
+  font-size: 1em;
+  padding: 10px 30px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #ff3399;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+
+/* ------------------- TELA DE SELEÇÃO DE PERSONAGENS ------------------- */
+.tela-personagens {
+  background: url('cenario/fundo2.png') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.personagem-container {
+  margin-top: 120px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.personagens {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #00000099;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.card p {
+  margin-top: 10px;
+}

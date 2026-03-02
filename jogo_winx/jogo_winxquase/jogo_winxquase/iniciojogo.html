@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Início do Jogo</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('iniciarjogo.png') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Press Start 2P', cursive;
+      color: white;
+      text-shadow: 2px 2px #000;
+    }
+
+    .mensagem {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 30px;
+      border-radius: 20px;
+      font-size: 1.2em;
+      text-align: center;
+    }
+  </style>
+  <script>
+    // Redireciona automaticamente após 3 segundos
+    setTimeout(() => {
+      window.location.href = "fase1.html"; // altere para o nome da próxima fase
+    }, 3000);
+  </script>
+</head>
+<body>
+  <div class="mensagem">
+    PREPARE-SE! O JOGO VAI COMEÇAR...
+  </div>
+</body>
+</html>
